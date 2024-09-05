@@ -11,7 +11,10 @@ export default function AppLayout(){
           <Headroom>
             <Header/>
           </Headroom>
+          <div className="overflow-hidden">
+
           <Hero/>
+          </div>
           <Features/>
           <Outlet/>
           <Footer/>
