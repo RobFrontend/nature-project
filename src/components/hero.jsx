@@ -57,7 +57,7 @@ export default function Hero() {
           <div className="justify-self-center">
             <h2 className="text-[96px] text-center uppercase">Pierwszy</h2>
             <img
-              className="max-h-[400px] w-min"
+              className="max-h-[400px] w-auto"
               src="https://images.unsplash.com/photo-1516470047996-b6dde636095f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="xD"
             />
@@ -67,7 +67,7 @@ export default function Hero() {
           <div className="justify-self-center">
             <h2 className="text-[96px] text-center uppercase">Drugi</h2>
             <img
-              className="max-h-[400px] w-min"
+              className="max-h-[400px] w-auto"
               src="https://images.unsplash.com/photo-1466872732082-8966b5959296?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="xD"
             />
@@ -77,7 +77,7 @@ export default function Hero() {
           <div className="justify-self-center">
             <h2 className="text-[96px] text-center uppercase">Trzeci</h2>
             <img
-              className="max-h-[400px] w-min"
+              className="max-h-[400px] w-auto"
               src="https://images.unsplash.com/photo-1477573829233-74cd1c17fa65?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="xD"
             />
@@ -87,7 +87,7 @@ export default function Hero() {
           <div className="justify-self-center">
             <h2 className="text-[96px] text-center uppercase">Czwarty</h2>
             <img
-              className="max-h-[400px] w-min"
+              className="max-h-[400px] w-auto"
               src="https://images.unsplash.com/photo-1489782419474-4d4221dc5b10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="xD"
             />
