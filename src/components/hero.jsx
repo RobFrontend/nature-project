@@ -36,7 +36,7 @@ export default function Hero() {
   return (
     <>
               
-      <div className="overflow-hidden min-h-screen bg-cover bg-top bg-[url('Hero.webp')]">
+      <div className="overflow-hidden min-h-screen bg-cover bg-top" style={{background: `url("Hero.webp")`}}>
       <Headroom>
             <Header/>
           </Headroom>
