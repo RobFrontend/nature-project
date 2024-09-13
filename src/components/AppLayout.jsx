@@ -7,17 +7,18 @@ import Headroom from "react-headroom";
 
 export default function AppLayout(){
     return (
-        <>
-          <Headroom>
-            <Header/>
-          </Headroom>
-          <div className="overflow-hidden">
+        <div className="z-0">
+
+          <div className="overflow-hidden relative">
 
           <Hero/>
           </div>
+         
+
           <Features/>
+       
           <Outlet/>
           <Footer/>
-        </>
+        </div>
     )
 }
