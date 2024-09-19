@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Headroom from "react-headroom";
 import Header from "./header";
 
-export default function Hero() {
+export default function Hero({children}) {
   const [isOpacity, setIsOpacity] = useState(90);
   const [isBig, setIsBig] = useState(8);
   const [isOne, setIsOne] = useState(0);
@@ -44,12 +44,15 @@ export default function Hero() {
           <h1 className="text-4xl font-bold text-slate-50 drop-shadow-md tracking-tight uppercase opacity-50 max-sm:text-2xl">
             Project
           </h1>
+<div className="overflow-y-hidden h-[150px]">
 
           <h1
             className={`${textSizeClass} ${opacityClass} font-bold text-slate-50 drop-shadow-md tracking-tight uppercase transition-all duration-1000 `}
-          >
+            >
             Nature
           </h1>
+            </div>
+          <h2 className="text-3xl max-sm:text-xl font-bold text-slate-50 uppercase tracking-wider pt-8">{children}</h2>
         </div>
       </div>
       

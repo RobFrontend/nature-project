@@ -8,8 +8,8 @@ return (
     <NavLink to='/'><h1 className="text-2xl text-slate-100 z-50">Logo</h1></NavLink>
     <nav className="flex gap-12 px-4 py-1 text-xl text-slate-50 max-sm:hidden">
         <NavLink to='/' className="hover:shadow-md transition duration-300 py-1 px-4">Home</NavLink>
-        <NavLink to='about' className="hover:shadow-md transition duration-300 py-1 px-4">About</NavLink>
-        <NavLink className="hover:shadow-md transition duration-300 py-1 px-4">Page3</NavLink>
+        <NavLink to='/booking' className="hover:shadow-md transition duration-300 py-1 px-4">Booking</NavLink>
+        <NavLink to='/about' className="hover:shadow-md transition duration-300 py-1 px-4">About</NavLink>
     </nav>
     <MobileNav/>
     </header>
