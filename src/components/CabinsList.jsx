@@ -29,7 +29,7 @@ export default function CabinsList() {
     <div className='grid self-start'>
         <label className='flex gap-2 content-center justify-center'>
          <span className='text-sm opacity-80'>${min}</span>
-         <input type='range' value={isPriceRange} min={min} max={max} onChange={(e) => setIsPriceRange(price => e.target.value)} className='w-[300px] drop-shadow-sm self-center justify-self-center'/>
+         <input type='range' value={isPriceRange} min={min} max={max} onChange={(e) => setIsPriceRange(price => e.target.value)} className='w-[300px] drop-shadow-sm self-center justify-self-center max-[400px]:w-[200px]'/>
          <span className='text-sm opacity-80'>${max}</span>
         </label>
         <span className='text-center'>${isPriceRange}</span>

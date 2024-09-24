@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function HomeKVs() {
+
+
   return (
     <>
     <div className='px-8 py-12 bg-gradient-to-tr from-slate-100 to-slate-300 p-8 '>

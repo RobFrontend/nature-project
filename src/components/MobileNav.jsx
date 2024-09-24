@@ -9,11 +9,11 @@ export default function MobileNav() {
    
   return (
     <div className="sm:hidden">
-        <button onClick={()=> setIsOpen(!isOpen)} className='z-50'>MENU</button>
+        <button onClick={()=> setIsOpen(!isOpen)} className='z-50 text-slate-50 px-3 py-1'>{isOpen ? 'X': 'MENU'}</button>
     <nav onClick={()=> setIsOpen(!isOpen)} className={`grid gap-12 px-4 text-xl text-slate-50 absolute w-full h-screen bg-slate-700/50 -z-10 top-0 left-0 justify-center  content-center ${openNav} transition-all duration-500`} >
         <NavLink onClick={()=> setIsOpen(!isOpen)} to='/' className="hover:shadow-md transition duration-300 py-1 px-4 z-50">Home</NavLink>
-        <NavLink onClick={()=> setIsOpen(!isOpen)} to='about' className="hover:shadow-md transition duration-300 py-1 px-4 z-50">About</NavLink>
-        <NavLink onClick={()=> setIsOpen(!isOpen)} className="hover:shadow-md transition duration-300 py-1 px-4 z-50">Page3</NavLink>
+        <NavLink onClick={()=> setIsOpen(!isOpen)} to='/booking' className="hover:shadow-md transition duration-300 py-1 px-4 z-50">Booking</NavLink>
+        <NavLink onClick={()=> setIsOpen(!isOpen)} to='/about' className="hover:shadow-md transition duration-300 py-1 px-4 z-50">About</NavLink>
     </nav>
     </div>
   )
