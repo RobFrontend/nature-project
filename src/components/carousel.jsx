@@ -5,7 +5,7 @@ export default function Carousel({ imgArr }) {
   const imagesArr = imgArr;
   let [current, setCurrent] = useState(imagesArr.at(0));
   const [opa, setOpa] = useState(1);
-  let [numArr, setNumArr] = useState(1);
+  let [numArr, setNumArr] = useState(0);
   let [move, setMove] = useState("translateX(0px)");
 
   useEffect(
@@ -35,9 +35,19 @@ export default function Carousel({ imgArr }) {
   function handeClick(inn) {
     if (inn !== numArr) {
       setOpa(0);
-      setMove("translateX(-300px)");
-      setTimeout(() => {
+      if (inn > numArr) {
+        setMove("translateX(-300px)");
+      }
+      if (inn < numArr) {
         setMove("translateX(300px)");
+      }
+      setTimeout(() => {
+        if (inn > numArr) {
+          setMove("translateX(300px)");
+        }
+        if (inn < numArr) {
+          setMove("translateX(-300px)");
+        }
         setTimeout(() => {
           setMove("translateX(0px)");
           setNumArr(inn);
