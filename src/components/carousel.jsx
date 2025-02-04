@@ -8,6 +8,10 @@ export default function Carousel({ imgArr }) {
   let [numArr, setNumArr] = useState(0);
   let [move, setMove] = useState("translateX(0px)");
 
+  const [a, b, ...rest] = imgArr;
+  const images2Arr = [[a, b], rest];
+  console.log(images2Arr);
+
   useEffect(
     function () {
       if (isHover) return;
@@ -80,6 +84,7 @@ export default function Carousel({ imgArr }) {
           </div>
         </div>
       </div>
+
       <div className="flex gap-8 justify-center p-8">
         {imagesArr.map((image, i) => (
           <button
@@ -94,6 +99,48 @@ export default function Carousel({ imgArr }) {
           ></button>
         ))}
       </div>
+      {/* <div
+        className={`flex pt-12 text-slate-600 drop-shadow-lg transition-all duration-500`}
+      >
+        {images2Arr.map((img) => (
+          <div className="flex gap-8 w-full">
+            {img.map((im) => (
+              <div key={im} className="w-screen grid">
+                <div
+                  onMouseEnter={() => setIsHover((isHover) => (isHover = true))}
+                  onMouseLeave={() =>
+                    setIsHover((isHover) => (isHover = false))
+                  }
+                  className="grid justify-self-center gap-8 px-4 transition-all duration-150"
+                >
+                  <h2 className="text-4xl text-center uppercase font-bold max-md:text-2xl max-[550px]:text-xl">
+                    Mountain Nightscape
+                  </h2>
+                  <img
+                    className="justify-self-center max-h-[400px] w-auto hover:scale-105 transition-all duration-500"
+                    src={im}
+                    alt="xD"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+      <div className="flex gap-8 justify-center p-8">
+        {images2Arr.map((image, i) => (
+          <button
+            onClick={() => {
+              handeClick(i);
+              console.log(image, i);
+            }}
+            className={`${
+              numArr === i ? `bg-slate-400` : `bg-slate-100 hover:bg-slate-50`
+            } rounded-full p-3 transition-all duration-300 hover:scale-[1.05]`}
+            key={image}
+          ></button>
+        ))}
+      </div> */}
     </div>
   );
 }
